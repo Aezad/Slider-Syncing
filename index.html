@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+    
+ 
+
+    <div class="main">
+        <div class="slider-wraper">
+            <div class="slider"><img src="assets/pexels-googledeepmind-17483906.jpg" alt="" class="slider-img"></div>
+            <div class="slider"><img src="assets/pexels-googledeepmind-17483907.jpg" alt="" class="slider-img"></div>
+            <div class="slider"><img src="assets/pexels-googledeepmind-17483908.jpg" alt="" class="slider-img"></div>
+            <div class="slider"><img src="assets/pexels-googledeepmind-17483910.jpg" alt="" class="slider-img"></div>
+            <div class="slider"><img src="assets/pexels-googledeepmind-17485705.jpg" alt="" class="slider-img"></div>
+        </div>
+
+        <div class="sec-slider-wraper">
+            <div class="sec-slider"><img src="assets/pexels-googledeepmind-17483906.jpg" alt="" class="sec-lider-img"></div>
+            <div class="sec-slider"><img src="assets/pexels-googledeepmind-17483907.jpg" alt="" class="sec-lider-img"></div>
+            <div class="sec-slider"><img src="assets/pexels-googledeepmind-17483908.jpg" alt="" class="sec-lider-img"></div>
+            <div class="sec-slider"><img src="assets/pexels-googledeepmind-17483910.jpg" alt="" class="sec-lider-img"></div>
+            <div class="sec-slider"><img src="assets/pexels-googledeepmind-17485705.jpg" alt="" class="sec-lider-img"></div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+ 
+
+    <script>
+  $('.slider-wraper').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.sec-slider-wraper'
+});
+$('.sec-slider-wraper').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.slider-wraper',
+  dots: true,
+  centerMode: true,
+  focusOnSelect: true,
+  nextArrow: '<button class="slick-next"><i class="fa-solid fa-arrow-right"></i></button>',
+  prevArrow: '<button class="slick-prev"><i class="fa-solid fa-arrow-left"></i></button>'
+});
+</script>
+
+</body>
+</html>
+
+
+
